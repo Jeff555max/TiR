@@ -21,6 +21,12 @@ color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
 running = True
 while running:
-    pass
+    screen.fill(color)
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        if event.type == pygame.MOUSEBUTTONDOWN:
+
+
 
 pygame.quit()
